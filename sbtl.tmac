@@ -1,0 +1,16 @@
+.rm MH
+.de MH
+Bell Laboratories
+Murray Hill, New Jersey 07974
+..
+.de UX
+.nr btl*seen-UX-macro 0
+.ds btl*UX-suffix \(dg\"
+\s[\\n[.s]*8u/10u]UNIX\s0\\$1\\*[btl*UX-suffix]
+.if !\\n[btl*seen-UX-macro] \{\
+.  FS \\*[btl*UX-suffix]
+.  nop UNIX is a Trademark of Bell Laboratories.\" sic
+.  FE
+.  nr btl*seen-UX-macro 1
+.\}
+..
