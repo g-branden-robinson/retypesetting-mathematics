@@ -1,11 +1,11 @@
 .nr PS 9
 .nr VS 11
-....ND "Revised  April, 1977"
+.\"...ND "Revised  April, 1977"
 .EQ
 delim $$
 gsize 9
 .EN
-....TR 17
+.\"...TR 17
 .TL
 A System for Typesetting Mathematics
 .AU
