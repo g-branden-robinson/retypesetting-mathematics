@@ -181,9 +181,11 @@ Any input entirely within quotes (\|"..."\|)
 is not subject to any of the font changes and spacing
 adjustments normally done by the equation setter.
 This provides a way to do your own spacing and adjusting if needed:
+.KS
 .P1
 italic "sin(x)" + sin (x)
 .P2
+.KE
 is
 .EQ
 italic "sin(x)" + sin (x)
@@ -281,6 +283,7 @@ mark
 if at all possible.
 Thus, for example,
 you can say
+.KS
 .P1
 ^EQ I
 x+y mark = z
@@ -296,6 +299,7 @@ x+y mark = z
 .EQ I
 x lineup = 1
 .EN
+.KE
 For reasons too complicated to talk about,
 when you use
 .UC EQN
@@ -428,10 +432,17 @@ A ~=~ left [
 right ]
 .P2
 will make
+.\" Cheat #1: AT&T eqn stacked piles more tightly than GNU eqn.
 .EQ
+set baseline_sep 1v
 A ~=~ left [
 pile { a above b above c } ~~ pile { x above y above z }
 right ]
+.EN
+.\" Reset equation baseline separation to the default, which is not
+.\" documented anywhere and has no syntactical access.  :-/
+.EQ
+set baseline_sep 140
 .EN
 The elements of the pile (there can be as many as you want)
 are centered one above another, at the right height for
@@ -466,6 +477,9 @@ and
 .ul
 cpiles
 than it is for ordinary piles.
+.\" Cheat #2: Shrink the display distance a bit to fit this display on
+.\" the page.
+.nr DD -0.25v
 .P1 2
 roman sign (x)~=~ 
 left {
@@ -473,6 +487,7 @@ left {
    ~~ lpile
     {if~x>0 above if~x=0 above if~x<0}
 .P2
+.nr DD +0.25v
 makes
 .EQ
 roman sign (x)~=~ 

@@ -1,3 +1,6 @@
+.\" Force extra-large blank area at top of page to match original.
+.sp 10v
+.nr MINGW 5.875n
 .if t .2C
 .SC Introduction
 .PP
@@ -400,6 +403,7 @@ beginning and end of the subscript or superscript:
 e sup {i omega t}
 .P2
 is
+.\" This equation got lost in the V7 Volume 2 manual!
 .EQ
 e sup {i omega t}
 .EN
@@ -523,6 +527,7 @@ is
 .EQ
 sqrt a+b + 1 over sqrt {ax sup 2 +bx+c}
 .EN
+.KS
 Warning _ square roots of tall quantities look lousy,
 because a root-sign 
 big enough to cover the quantity is
@@ -534,6 +539,7 @@ is
 .EQ
 sqrt{a sup 2 over b sub 2}
 .EN
+.KE
 Big square roots are generally better written as something
 to the power \(12:
 .EQ

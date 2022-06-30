@@ -2,10 +2,10 @@
 .PP
 Here is the complete source for the three display equations
 in the abstract of this guide.
-.sp
-.nf
+.DS L
 .ps -2
 .vs -2
+.\" Keep the copy of this in file "g0" in sync.
  .EQ I
  G(z)~mark =~ e sup { ln ~ G(z) }
  ~=~ exp left ( 
@@ -13,26 +13,27 @@ in the abstract of this guide.
  ~=~  prod from k>=1 e sup {S sub k z sup k /k}
  .EN
  .EQ I
+ define cdots "{ \[md]~\[md]~\[md] }"
+ define ldots "{ .~.~. }"
  lineup = left ( 1 + S sub 1 z + 
- { S sub 1 sup 2 z sup 2 } over 2! + ... right )
- left ( 1+ { S sub 2 z sup 2 } over 2
+ { S sub 1 sup 2 z sup 2 } over 2! + ~ cdots right )
+ ~ left ( 1+ { S sub 2 z sup 2 } over 2
  + { S sub 2 sup 2 z sup 4 } over { 2 sup 2 cdot 2! }
- + ... right ) ...
+ + ~ cdots right ) ~ cdots
  .EN
  .EQ I
  lineup =  sum from m>=0 left (
  sum from
- pile { k sub 1 ,k sub 2 ,..., k sub m  >=0
+ pile { k sub 1 ,k sub 2 , ~ ldots ~ , k sub m  >=0
  above
- k sub 1 +2k sub 2 + ... +mk sub m =m}
+ k sub 1 +2k sub 2 + ~ cdots ~ +mk sub m =m}
  { S sub 1 sup {k sub 1} } over {1 sup k sub 1 k sub 1 ! } ~
  { S sub 2 sup {k sub 2} } over {2 sup k sub 2 k sub 2 ! } ~
- ...
+ cdots
  { S sub m sup {k sub m} } over {m sup k sub m k sub m ! } 
- right ) z sup m
+ right ) ~ z sup m
  .EN
-.sp
-.fi
+.DE
 .ps +2
 .vs +2
 .SC "Keywords, Precedences, Etc."
@@ -61,7 +62,7 @@ All others group to the right.
 Digits, parentheses, brackets, punctuation marks, and these mathematical words
 are converted
 to Roman font when encountered:
-.P1
+.P1 3 \" reduce indentation, GBR 2022
 sin  cos  tan  sinh  cosh  tanh  arc
 max  min  lim  log  ln  exp
 Re  Im  and  if  for  det
@@ -140,7 +141,7 @@ together with the section where they are discussed.
 .sp
 .nf
 .in .2i
-.ta .7i 1.4i 2.1i
+.ta .7i 1.4i 2.0i \" reduce last tab stop, GBR 2022
 above	17, 18	lpile	17
 back	21	mark	15
 bar	13	matrix	18
