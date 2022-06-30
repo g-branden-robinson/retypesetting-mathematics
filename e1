@@ -20,8 +20,9 @@ One difficulty with mathematical text
 is the multiplicity of characters,
 sizes, and fonts.
 An expression such as
+.\" Correct missing space before "->" for GNU eqn.  GBR, 2022.
 .EQ
-lim from {x-> pi /2} ( tan~x) sup{sin~2x}~=~1
+lim from {x -> pi /2} ( tan~x) sup{sin~2x}~=~1
 .EN
 requires an intimate mixture of roman, italic and greek letters, in three sizes,
 and a special character or two.

@@ -28,7 +28,8 @@ Mathematical expressions are described in a language
 designed to be easy to use
 by people who know neither mathematics nor typesetting.
 Enough of the language to set in-line expressions like
-$lim from {x-> pi /2} ( tan~x) sup{sin~2x}~=~1$
+.\" Correct missing space before "->" for GNU eqn.  GBR, 2022.
+$lim from {x -> pi /2} ( tan~x) sup{sin~2x}~=~1$
 or display equations like
 .in .5i
 .EQ I

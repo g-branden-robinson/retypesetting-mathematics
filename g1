@@ -603,6 +603,7 @@ can often be used in unexpected ways:
 lim from {n \(mi> inf} x sub n =0
 .P2
 is
+.\" Correct missing space before "->" for GNU eqn.  GBR, 2022.
 .EQ
-lim from {n-> inf} x sub n =0
+lim from {n -> inf} x sub n =0
 .EN
