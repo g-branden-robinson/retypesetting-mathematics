@@ -1,4 +1,5 @@
-.\" Adapted for groff by G. Branden Robinson, 2022-06-30.
+.\" Adapted for groff by G. Branden Robinson, 2022-06-30/07-02.  Thanks
+.\" to Deri James for PDF support.
 .\" These values, used with URW Times fonts at 10 points, produce column
 .\" and page breaks nearly identical to the C/A/T typeset original.
 .nr LL 5.4i
@@ -36,6 +37,8 @@ Brian W. Kernighan and Lorinda L. Cherry
 .\"ll
 .nr 0:li 0
 .nr 0:ri 0
+.pdfinfo /Title Typesetting Mathematics - User's Guide (Second Edition)
+.pdfinfo /Author Brian W. Kernighan and Lorinda L. Cherry
 .PP
 This is the user's guide for a system for typesetting
 mathematics,
