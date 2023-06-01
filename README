@@ -1,0 +1,43 @@
+The classic Unix paper, "Typesetting Mathematics -- User's Guide" (2nd
+ed.) remains even after 50 years an excellent resource for acquiring the
+eqn language for preparing equations for *roff systems.
+
+I wanted to retypeset this document with groff since its source is
+available and the Version 7 Unix Programmer's Manual Volume 2 scans on
+the Web are caked with flyspecks and other unpleasantness.
+
+So I did.
+
+A further advantage of retypesetting it with groff is that we can
+produce it in PDF, which has several advantages over PostScript and the
+output devices used by Unix troff.
+
+1. The text is searchable.
+
+2. The text is navigable.  All this required was the addition of one
+   macro call to the existing private `SC` macro defined by the
+   document.  Et voilá--all the section headings are hyperlinked in a
+   navigation pane (if your PDF reader offers one).
+
+3. The text has metadata for the title and authors.  This was a matter
+   of another two macro calls.
+
+This exercise exposed several bugs in groff's ms macro package
+implementation, the fixes for which are expected in groff 1.23.0.
+
+More interesting was the exposure of a bug in AT&T troff: an equation
+was missing from the Unix V7 C/A/T-typeset rendition of this manual.  It
+is now restored (to the bottom of the left-hand column on page 4).
+
+I made some very small changes to the source material, but none to
+anything one might consider narrative; they are all commented and
+explained.  The most important avoids lying about when the document was
+rendered.  I used groff extensions unapologetically (but there wasn't
+much to do).
+
+If you enjoy this document's transfiguration, please raise a glass to
+the memory of Lorinda Cherry--who passed away in February 2022, mere
+months before I undertook this project--and to her co-author, Brian
+Kernighan, who is still with us as of this writing.
+
+Many thanks to Deri James for his assistance with PDF features.
