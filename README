@@ -27,13 +27,14 @@ implementation, the fixes for which are expected in groff 1.23.0.
 
 More interesting was the exposure of a bug in AT&T troff: an equation
 was missing from the Unix V7 C/A/T-typeset rendition of this manual.  It
-is now restored (to the bottom of the left-hand column on page 4).
+is now restored (to the bottom of the left-hand column on page 4, when
+rendered with groff 1.23.0).[1]
 
 I made some very small changes to the source material, but none to
-anything one might consider narrative; they are all commented and
-explained.  The most important avoids lying about when the document was
-rendered.  I used groff extensions unapologetically (but there wasn't
-much to do).
+anything one might consider narrative; except for my addition of keep
+macros (KS/KE), they are all commented and explained.  The most
+important avoids lying about when the document was rendered.  I used
+groff extensions unapologetically (but there wasn't much to do).
 
 If you enjoy this document's transfiguration, please raise a glass to
 the memory of Lorinda Cherry--who passed away in February 2022, mere
@@ -41,3 +42,6 @@ months before I undertook this project--and to her co-author, Brian
 Kernighan, who is still with us as of this writing.
 
 Many thanks to Deri James for his assistance with PDF features.
+
+[1] You can obtain groff 1.23.0.rc4 (release candidate 4) from
+    <https://alpha.gnu.org/gnu/groff/>.
