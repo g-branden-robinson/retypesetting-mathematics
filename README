@@ -23,7 +23,7 @@ output devices used by Unix troff.
    of another two macro calls.
 
 This exercise exposed several bugs in groff's ms macro package
-implementation, the fixes for which are expected in groff 1.23.0.
+implementation, the fixes for which are in groff 1.23.0.
 
 More interesting was the exposure of a bug in AT&T troff: an equation
 was missing from the Unix V7 C/A/T-typeset rendition of this manual.  It
@@ -43,5 +43,5 @@ Kernighan, who is still with us as of this writing.
 
 Many thanks to Deri James for his assistance with PDF features.
 
-[1] You can obtain groff 1.23.0.rc4 (release candidate 4) from
-    <https://alpha.gnu.org/gnu/groff/>.
+[1] You can obtain groff 1.23.0 from
+    <https://ftpmirror.gnu.org/groff/groff-1.23.0.tar.gz>.
