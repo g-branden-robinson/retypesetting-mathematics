@@ -3,8 +3,8 @@ ed.) remains even after 50 years an excellent resource for acquiring the
 eqn language for preparing equations for *roff systems.
 
 I wanted to retypeset this document with groff since its source is
-available and the Version 7 Unix Programmer's Manual Volume 2 scans on
-the Web are caked with flyspecks and other unpleasantness.
+available and the Seventh Edition Unix Programmer's Manual Volume 2
+scans on the Web are caked with flyspecks and other unpleasantness.
 
 So I did.
 
