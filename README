@@ -22,6 +22,9 @@ output devices used by Unix troff.
 3. The text has metadata for the title and authors.  This was a matter
    of another two macro calls.
 
+See the "Releases" area for PDFs of this document (and another related
+one) prepared using groff 1.24.0.
+
 This exercise exposed several bugs in groff's ms macro package
 implementation, the fixes for which are in groff 1.23.0.
 
