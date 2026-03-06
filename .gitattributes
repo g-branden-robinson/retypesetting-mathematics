@@ -1,0 +1,6 @@
+# Override "Linguist's" terrible guesses of file types.  Its "README.md"
+# says "[m]ost languages are detected by their file extension.  This is
+# the fastest and most common situation."  Checking the validity of such
+# determinations is evidently not thought to be worthwhile.
+e* linguist-language=Roff
+g* linguist-language=Roff
