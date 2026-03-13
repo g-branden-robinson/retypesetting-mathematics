@@ -16,8 +16,8 @@ delim $$
 .ND "August 15, 1978 \fI(retypeset with \fPgroff \n(.x.\n(.y.\n(.Y\fI\
  \n[year]-\n(mo-\n(dy)"
 .\" GBR: Suppress repetition of doc info and don't alter page numbering.
-.ie \n(.y=23 .RP no-repeat-info no-renumber
-.el          .RP no
+.ie \n(.x=1&\n(.y>=23 .RP no-repeat-info no-renumber
+.el                   .RP no
 .\" Force page 1 to be numbered; it follows the cover page and the Unix
 .\" Programmer's Manual page headings (which these sources don't produce
 .\" anyway) are not appropriate for this document in isolation.
