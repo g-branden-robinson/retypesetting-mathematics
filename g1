@@ -1,3 +1,4 @@
+.pdfpagenumbering Decimal
 .\" Force extra-large blank area at top of page to match original.
 .sp 10v
 .nr MINGW 5.875n

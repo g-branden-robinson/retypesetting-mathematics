@@ -1,5 +1,6 @@
-.\" Adapted for groff by G. Branden Robinson, 2022-06-30/07-02.  Thanks
-.\" to Deri James for PDF support.
+.\" Adapted for groff by G. Branden Robinson, initially from 2022-06-30/
+.\" 07-02.  Thanks to Deri James for PDF support.
+.\"
 .\" These values, used with URW Times fonts at 10 points, produce column
 .\" and page breaks nearly identical to the C/A/T typeset original.
 .nr LL 5.4i
@@ -21,7 +22,7 @@ delim $$
 .\" Force page 1 to be numbered; it follows the cover page and the Unix
 .\" Programmer's Manual page headings (which these sources don't produce
 .\" anyway) are not appropriate for this document in isolation.
-.\"nr pg*P1 1
+.nr pg*P1 1
 .\"TM "76-1273-4 76-1271-4" 39199 39199-11
 .ds CF \fIgroff\fP \n(.x.\n(.y.\n(.Y
 .TL
@@ -37,6 +38,7 @@ Brian W. Kernighan and Lorinda L. Cherry
 .\"ll
 .nr 0:li 0
 .nr 0:ri 0
+.pdfpagenumbering roman
 .pdfinfo /Title Typesetting Mathematics - User's Guide (Second Edition)
 .pdfinfo /Author Brian W. Kernighan and Lorinda L. Cherry
 .PP
@@ -111,7 +113,5 @@ and
 .UC GSI
 terminals
 and Model 37 teletypes.
-.\" TODO: Force the first body page to be numbered "2" to align with PDF
-.\" page numbers.
 .AE
 .\"CS 11 0 11 0 0 3
