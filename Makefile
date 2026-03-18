@@ -2,6 +2,7 @@
 # results, ensure that it locates an s.tmac file with some fixes applied
 # (Savannah #62686, #62687, #62688).
 GROFF:=groff
+# TODO: When groff 1.25 is released, add "-Wstyle".
 GROFFOPTS:=-ww -e -ms -M . -m sbtl -P -e -P -pletter -T pdf
 
 ALL=eqnsystem.pdf eqnuser.pdf
