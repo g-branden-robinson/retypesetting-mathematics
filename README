@@ -46,7 +46,7 @@ Kernighan, who is still with us as of this writing.
 
 Many thanks to Deri James for his assistance with PDF features.
 
-For groff 1.24.0, Deri furthermore constributed an "SS" font for the
+For groff 1.24.0, Deri furthermore contributed an "SS" font for the
 gropdf(1) output driver he wrote, which is metrically compatible with
 the traditional slanted symbol (SS) font used in typesetter *roffs
 historically.
