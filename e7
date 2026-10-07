@@ -20,7 +20,7 @@ uniformly favorable.
 If we had written everything into code directly,
 we would have been locked into
 our original design.
-Furthermore, we would have never been sure
+Furthermore, we never would have been sure
 where the exceptions and special cases were.
 But because we have a grammar, we can change our minds readily and still be reasonably
 sure that if a construction works in one place

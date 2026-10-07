@@ -41,7 +41,7 @@ characters of various sizes.
 A tilde ``\|~\|'' gives a space equal
 to the normal word spacing in text;
 a circumflex gives half this much,
-and a tab charcter spaces to the next tab stop.
+and a tab character spaces to the next tab stop.
 .PP
 Spaces (or tildes, etc.)
 also serve to delimit pieces of the input.
